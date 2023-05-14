@@ -1,0 +1,225 @@
+Drive Gauge
+Both players start each round with 6 bars of Drive Gauge, which can be spent on various offensive, defensive, and movement
+techniques. When the gauge is not full, it automatically regenerates over time. Drive Gauge management is fundamental to
+the game's strategy; players with better management will have a huge advantage over those who manage it poorly. It allows
+for playstyles from slow and conservative to reckless gambling, making the Drive system a vehicle for player selfexpression.
+Note: When reading frame data, 1 Bar = 10,000 Drive
+meter; in most cases, a simple decimal is used instead
+(e.g. 1.7 Drive).
+Spending meter on Drive moves is not the only way for the gauge to decrease. Blocking attacks will cause some Drive meter
+to be chipped away. The weakest attacks can chip around 5% of a Drive bar, while some can drain a full bar on their own.
+
+This weakens passive, defensive playstyles significantly; defensive-minded players will have to focus more on their
+positioning, and using techniques like Drive Parry to mitigate this disadvantage. Some attacks like Drive Impact, Super Arts,
+and any Punish Counter also drain the Drive Gauge when they hit.
+Drive System
+Drive Move Drive Gauge Cost
+Drive Impact
+Drive Parry (Hold)
+Drive Rush (from Parry)
+Drive Rush (cancel)
+Overdrive Specials
+Drive Reversal
+It's important to note that any Drive action can be performed, even if only a pixel of the Drive Gauge remains. This is great
+for securing a KO at the end of a round, since the Burnout penalty does not carry over into the following round.
+Increases Drive Gauge Decreases Drive Gauge
+Attacking opponent
+(Hit/Block)
+Blocking attacks
+Passive Regen over time
+Getting hit by Super, Drive Impact, or Punish Counter
+(Super cinematic also stops passive regeneration)
+Successful Drive Parry
+(especially useful vs. Supers)
+Using Drive actions
+Walking Forward
+(stacks with passive regen)
+Burnout
+Burnout state happens when the player's Drive gauge becomes fully depleted. Burnout gives the player several negative
+effects:
+All blocked attacks have 4 additional frames of blockstun
+This allows for much stronger pressure sequences; many more attacks become safe on block
+Hitstun is not affected, so combo routes remain unchanged on burned out opponents
+Blocking special moves or supers results in Chip Damage; can lose the round to Chip K.O.
+Corner Drive Impact wall splat causes Stun on hit or block
+Can no longer use any Drive options until gauge is fully replenished
+
+Luke in Burnout
+Luke performs a Drive Impact
+Being in Burnout creates situations that are extremely difficult to escape, like looping corner
+sequences that are plus on block. If a cornered player is stunned by Drive impact while in
+Burnout, their Drive Gauge will be fully replenished after recovering from stun. The usual
+methods of building Drive Gauge also help decrease the Burnout recovery time. While it may
+be tempting to play passively while in Burnout, it may actually be more effective to mount a
+strong offense, as you still gain Drive meter from hitting the opponent. Playing an aggressive,
+offensive style can also make it harder for the opponent to push you back into the corner,
+where Burnout becomes much more dangerous.
+Drive Impact (DI)
+Costs 1 Drive Stock. Input + (HP+HK) to perform.
+St Act Rec Blk Adv Dmg
+26(27) 2 35 -3 800
+Drive Impact (DI) is a forward-lunging strike with 2 hits of armor during the startup
+frames, allowing it to absorb and counter the opponent's attacks. If DI absorbs an attack or hits as a Punish Counter, the
+opponent will be left in a crumple state on hit. The threat of DI makes it risky to throw out mid-range projectiles or
+uncancellable pokes in neutral, but this generally requires a prediction rather than a reaction. Drive Impact has massive
+pushback when blocked midscreen; this can be used to fight your way out of the corner. This blockstun causes a stagger state
+that prevents Drive Reversal unless the DI is parried.
+DI drains the opponent's Drive Gauge:
+on Block on Hit on Counterhit on Punish/Crumple
+0.5 Bar 1 Bar 1.2 Bars 1.5 Bars
+Wall Splat: occurs if Drive Impact connects near the corner on hit or block, allowing a guaranteed followup juggle
+While stuck to wall, the opponent is in a free juggle state where followup attacks will also juggle (similar to Force
+Knockdown state)
+example: Ryu can juggle 2HP xx 623HP, or Luke can juggle 5LP~MP~HP > Super without the opponent
+falling out
+If the DI hits an airborne opponent, the splat occurs higher on the wall; may allow stronger juggle followups
+Wall Splat will not occur if performing a true combo or blockstring into DI
+"LOCK" will appear on the screen after a true blockstring into DI; the opponent will bounce away as though it
+happened midscreen
+
+If a normal is cancelled into DI, a blockstring gap of 8f or less cannot be escaped by jumping
+Combo damage scaling after Wall Splat:
+On Hit: DI acts as 2 hits of the combo (100 -> 80 -> 70 -> 60...)
+On Block: followup has 80% multiplier on standard scaling formula (80 -> 80 -> 64 -> 56 -> 48...)
+Stun/Dizzy: occurs when Drive Impact connects on a cornered opponent while in Burnout state. Like Wall Splat, this works
+on hit or block. The opponent is left vulnerable to a huge punish combo, and may also allow time for actions such as Ryu
+charging Denjin, Kimberly reloading a spraycan, Juri gaining Fuha stocks, etc.
+If the DI itself forces the opponent into Burnout, the Stun will still occur
+Does not occur if DI connects in a true combo/blockstring (same as Wall Splat)
+Because burned out opponents have no Drive options, their only counter to Drive Impact cancels is usually a reversal
+Super Art
+Combos on dizzy opponents begin at 80% damage scaling, then continue to decrease by 10% per hit as usual
+The opponent can be hit for the next 195 frames from the moment they hit the wall; if untouched, they fall over into a
+Hard Knockdown state
+Drive Impact does have a few downsides:
+Can be broken by Armor Break moves such as Super Arts or Drive Reversal, or by quick chained attacks
+A common tactic is to use a poke cancelled into Fireball, then cancel into Lv. 3 Super on reaction to beat Drive
+Impact
+Against projectiles, there are 6 frames of armor hit-freeze that slow down your Drive Impact without affect the
+opponent's recovery
+This makes it difficult or impossible to use on reaction to fireballs unless they have very long recovery
+Multi-hit OD fireballs have hit-freeze on each hit, making it even harder to armor through them
+You take recoverable damage when absorbing an attack, which will KO if you don't have enough HP to survive
+The opponent can react with their own Drive Impact, which hits as a Punish Counter
+If two Drive Impacts clash simultaneously, they will clash with each other and reset to neutral. DI startup also becomes 1f
+slower after absorbing an attack. As a result, this clash can occur if your normal connects on the opponent's first DI armor
+frame, before cancelling into your own DI. As a side note, Drive moves take priority over special moves (but not Super Arts),
+so something like Ryu's 236+HP+HK would result in Drive Impact rather than Hadoken.
+Drive Reversal (DRev)
+Costs 2 Drive Stocks. Press + + (6HPHK) during blockstun to perform.
+
+"Perform a counterattack while blocking an
+opponent’s attack. The damage is low but can
+help you out of tight situations when you’re
+being pressured." - Capcom.
+"Automatically repel an opponent’s attack and
+replenish Drive when performed successfully.
+Perform a Perfect Parry by parrying just before
+an opponent’s attack hits you." - Capcom.
+St Act Rec Blk Adv Dmg
+20 3 26 -8 500 (Rec)
+Note: Chun-Li's DRev is 2 hits, with active frames 3(10)3
+Similar to Alpha Counter or V-Reversal from previous Street Fighter games,
+Drive Reversal is used to counterattack after blocking an opponent's attack.
+DRev is fully invincible from frames 1-22, and deals a small amount of
+recoverable damage on hit. Drive Reversals break armor, so you don't have
+to worry that the opponent may cancel into Drive Impact as a counter.
+All Drive Reversals are punishable at -8 on block, and are slow enough that
+quick attacks will recover before the Drive Reversal connects. DRev immediately ends the blockstun of the opponent's
+attack, so inputting it earlier increases the chance of successfully punishing the opponent's move. The blockstun of a
+successful Parry can also be cancelled with Drive Reversal, and this is the only way to use it against Drive Impact. It is
+impossible to win a round with the damage from Drive Reversal.
+One of the strongest uses for Drive Reversal may be to prevent the opponent's corner escape; if they try to force some offense
+to push you back, simply knock them back into the corner for 2 Drive bars. It's important to learn which of the opponent's
+moves recovery quickly enough to block DRev, however, or you may end up getting punished and cornered yourself.
+Drive Parry
+Consumes ~1/2 Drive gauge upon activation, continues draining while
+held. Hold + (MP+MK) to perform. Becomes a Perfect Parry if it
+successfully parries an attack within 2 frames of being input.
+St Act Rec
+1 8~ [2] 29 [1]
+Note: [] refers to Perfect Parry
+Regular Parry:
+Parries all strikes and projectiles (high and low) from frame 1
+Results in the same frame advantage as blocking the move, but with
+less pushback
+Can be cancelled into Drive Reversal like regular blockstun
+8f parry window if buttons are tapped, longer if held
+Drains 50 Drive/frame when held (1 additional bar every 200f)
+Can block during recovery frames (must still block in the correct direction)
+Useful for blocking high/low or left/right mixups, but remains vulnerable to throws
+
+Getting thrown during Parry results in a Punish Counter (extra damage, Hard Knockdown, loses 1 extra Drive bar)
+Can cancel into Drive Rush from 3rd active frame onward
+Fastest Drive Rush input method is to tap forward, then forward + Parry
+Rewards 5000 Drive (1/2 bar) for successfully parrying non-Super projectiles (including multi-hit projectiles)
+Some exceptions exist, like Kimberly double Spraycan (10000 total) or Guile Sonic Break (2000 each)
+Rewards 10000 Drive (1 bar) for successfully parrying Normals, Specials (including multi-hit attacks), or Drive
+Reversal
+Target Combos or Rekka strings count as separate attacks, so parrying them builds 1 bar for each hit
+Rewards 20000 Drive (2 bars) for successfully parrying Super Arts or Drive Impact
+This makes it significantly better than blocking, unless the Parry activation would put you into Burnout
+The opponent will also gain some Drive meter when their attack is parried, the same as if it was blocked
+Perfect Parry:
+Occurs on the first 2 active frames; Parry cannot be buffered by holding it down, must be timed properly
+Has only 1f of recovery, and prevents the opponent from cancelling their attack, making punishes mostly guaranteed
+The screen freezes upon a successful Perfect Parry, giving ample time to react with a strong punish
+Fully invincible for 6f after success, during which time you can cancel into anything except Drive moves
+A 50% damage scaling penalty is applied to any punish afterward, even if you delay the followup beyond the 6f
+cancel window
+Against projectiles, the screen does not freeze; puts you into 11f of fixed recovery
+During this 11f recovery, the character is Throw invincible, and any further strikes will automatically be
+parried
+Perfect Parrying projectiles allows you to hold the input for up to 13 frames without incurring the standard 29f
+of parry recovery
+Perfect Parrying a strike and projectile on the same frame will parry the strike, causing the screen freeze effect
+In general, Perfect Parry rewards you with the same amount of Drive meter as a regular Parry
+However, the invincibility period can cause some attack hits to whiff, while still only building partial Drive for
+the part that connected (e.g. Luke's charged Flash Knuckle)
+Note: tapping Drive Parry for the minimum time technically costs slightly more than 1/2 Drive bar (unless cancelled into
+immediate Drive Rush); at 10,000 Drive per bar, the usual cost is 5,250. When done from a crouching state, this cost is
+increased to 5,300 (or 5,600 for Guile, Kimberly, and Luke). This difference is extremely minor, but could potentially be
+relevant if attempting a parry with exactly 1/2 a Drive bar remaining.
+Drive Rush (DR)
+Costs 1 Drive Stock (after Parry) or 3 stocks (after cancellable normal). Tap (66) to perform.
+
+"Perform a quick rush forward from a Drive
+Parry or a cancelable normal attack. Drive
+Rush from a parry costs 1 Drive Stock, while
+Drive Rush from a normal attack costs 3 Drive
+Stocks." - Capcom.
+Luke performs an Overdrive Sand Blaster
+St Act Rec
+DR (Cancel) 9 [~45] 24
+DR (Parry) 11 [~46] 23
+Note: Active frames [] refers to the part of the dash that can be cancelled into a normal for
+the +4 bonus
+Drive Rush adds +4 to the Hit or Block Advantage of any Normal or
+Command Normal that is input during the dash animation (but not to
+Special moves). This makes it great for block pressure, combo extensions,
+and safe mixups. The dash can be cancelled early by any attack, giving
+access to a strike/throw mixup. This prevents players from holding Parry or
+using Drive Impact as a universal defensive response. Normals from Drive
+Rush also generally have increased juggle potential and do not increase the opponent's juggle count, allowing for unique
+extended juggle sequences.
+If Drive Rush is used mid-combo (whether cancelled or from raw Parry), an additional damage scaling penalty applies, and
+no additional Drive gauge will be built for the rest of the combo. This does not apply to combos that begin with a Drive Rush
+attack. Entering the cinematic of a Level 3 Super will also restart the passive regeneration of Drive meter.
+The screen freezes for 10 frames during the startup of Drive Rush. This can help to provide a little extra time to decide what
+to do next, such as reacting to hit/block, or reacting to an opponent's jump or dash animation. At the same time, it makes it
+easier for the opponent to react to raw Drive Rush in neutral.
+It takes a longer time (23-24f) before the Drive Rush can be cancelled with a directional input like crouch, block, or jump.
+This means that Drive Rush into Block is not a practical way to bait an opponent's response. These late directional input
+cancels have 2f recovery; as a result, inputting a crouching or command normal late in the Drive Rush animation requires
+precise timing to receive the +4 frame advantage. The direction and button must be input together within a 3f window.
+Overdrive (OD)
+Costs 2 Drive Stocks. Press two Punches or Kicks while inputting a special
+move to perform the Overdrive Art (OD) version.
+Acts similarly to EX Special Moves from previous titles. Just like before,
+input the special move with 2 punches or 2 kicks to perform an enhanced
+special at the cost of 2 Drive stocks. OD specials can now combo into Super
+Arts since they are no longer tied to the same meter.
+OD moves generally have benefits like extra damage, faster startup,
+lower recovery, and may even have invincibility
+OD moves often put the opponent in a juggle state, or have higher juggle potential themselves
+OD moves can be performed with less than 2 Drive stocks, but the player is immediately put into Burnout state
