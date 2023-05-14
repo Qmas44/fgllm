@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 streamlit = "*"
+langchain = "*"
+faiss-cpu = "*"
+pickle-mixin = "*"
+openai = "*"
+tiktoken = "*"
 
 [dev-packages]
 
