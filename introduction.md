@@ -11,3 +11,7 @@ This is a work in progress so if you run into any issues please let me know here
 You can enter any street fighter 6 related question into the chat and frame bot will give you an answer.
 
 **Feel free to give it specific questions related to different characters or even character interactions ie: 'What is the best way to punish Ryu's heavy dragon punch with Ken?'**
+
+### Why does it take so long to answer my question?
+Depending on the question it can take a bit for the ai to comprehend the question and answer correctly. Please have patience with this work in progress bot. I will be looking for more ways to improve the answers and the time it takes to get them!
+

@@ -14,7 +14,7 @@ from streamlit_chat import message
 st.set_page_config(
    page_title="Frame Bot",
    page_icon=":robot_face:",
-   initial_sidebar_state="collapsed",
+   initial_sidebar_state="auto",
    menu_items={
         'About': "This is a fighting game chat bot!"
     }
@@ -48,6 +48,7 @@ def train():
     for sets in data:
         docs.extend(textSplitter.split_text(sets))
 
+    # Hugging face drawing errors sometimes. Need to find a better way to embed
     store = FAISS.from_texts(docs, HuggingFaceHubEmbeddings(huggingfacehub_api_token=st.secrets["HUGGINGFACE_API_TOKEN"]))
     faiss.write_index(store.index, "training.index")
     store.index = None
