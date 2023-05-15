@@ -55,6 +55,8 @@ def train():
 
     with open("faiss.pkl", "wb") as f:
         store = pickle.dump(store, f)
+    
+train()
 
 index = faiss.read_index("training.index")
 
