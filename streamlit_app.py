@@ -1,6 +1,6 @@
 import os, sys
 from pathlib import Path
-import streamlit as st
+import langchain
 from langchain.text_splitter import CharacterTextSplitter
 import faiss
 from langchain.vectorstores import FAISS
@@ -8,6 +8,8 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain import OpenAI, LLMChain
 from langchain.prompts import PromptTemplate
 import pickle
+import streamlit as st
+from streamlit_chat import message
 
 if "OPENAI_API_KEY" not in os.environ:
   print("You must set an OPENAI_API_KEY using the Secrets tool", file=sys.stderr)
@@ -51,6 +53,9 @@ store.index = index
 masterPrompt = """You are a Professional Fighting game expert for Street Fighter 6 with years of experience teaching and explaining fighting games to new fighting game players. 
 I want you to be a teach and explain things as if I had never played a fighting game before. You also have a strong understanding of frame data.
 
+If any questions are asked that you don't know the answer to, please say "I don't know. Is there anything else I can help you with?" and move on to the next question.
+If any questions are asked that aren't related to fighting games, please say "I don't know, please ask a question related to fighting games" and move on to the next question.
+
 Use the following pieces of MemoryContext to answer the questions at the end. Also remember ConversationHistory is a list of Conversation objects.
 ---
 ConversationHistory: {history}
@@ -74,13 +79,33 @@ def onMessage(question, history):
     answer = llmChain.predict(question=question, context="\n\n".join(contexts), history=history)
     return answer
 
+if 'generated' not in st.session_state:
+    st.session_state['generated'] = []
+
+if 'past' not in st.session_state:
+    st.session_state['past'] = []
+
+if "temp" not in st.session_state:
+    st.session_state['temp'] = ''
+
+def submit():
+    st.session_state['temp'] = st.session_state['text']
+    st.session_state['text'] = ''
+
 history = []
-while True:
-    question = input("Ask a question > ")
+st.title("Fighting Game Bot")
+st.text_input("Ask a question > ", placeholder="What is Drive Gauge?", key="text", on_change=submit)
+
+question = st.session_state['temp']
+
+if question:
     answer = onMessage(question, history)
-    print(f"Bot: {answer}")
+    st.session_state.past.append(f"Human: {question}")
+    st.session_state.generated.append(f"Bot: {answer}")
     history.append(f"Human: {question}")
     history.append(f"Bot: {answer}")
 
-
-st.write('helloooo')
+if st.session_state['generated']:
+    for i in range(len(st.session_state['generated'])):
+        message(st.session_state['generated'][i])
+        message(st.session_state['past'][i], is_user=True, avatar_style="adventurer", seed=123)

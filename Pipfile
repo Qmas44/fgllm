@@ -10,6 +10,7 @@ faiss-cpu = "*"
 pickle-mixin = "*"
 openai = "*"
 tiktoken = "*"
+streamlit-chat = "*"
 
 [dev-packages]
 

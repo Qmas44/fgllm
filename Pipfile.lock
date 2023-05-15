@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cf3dbc09c1d17375de12ca9eb642fdc71e5068f65cd7b64d7b9c5a99b84224a3"
+            "sha256": "be3c0c3e681f385e01e2cc512a8e142fe9364f4e9ece9749732d6ed512c2465e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -513,11 +513,11 @@
         },
         "langchain": {
             "hashes": [
-                "sha256:122590f9ccb343f19eefc5f7a548c96fab10d15fcf66fc33c0d9937b157f1c6b",
-                "sha256:ed1a38a5d0bff9f06250a928be25ca929567e36d409df8ca9f7a7a33a7b10790"
+                "sha256:492ca88615eb850ef208966e18ace5dcfd55b0d3d4e14f28319da0b00f90e7eb",
+                "sha256:dacd8e33daf47d0a523298aa35ed1409cc1ae4a1fcab8480e98401158b9d6c39"
             ],
             "index": "pypi",
-            "version": "==0.0.168"
+            "version": "==0.0.169"
         },
         "markdown-it-py": {
             "hashes": [
@@ -1297,6 +1297,14 @@
             ],
             "index": "pypi",
             "version": "==1.22.0"
+        },
+        "streamlit-chat": {
+            "hashes": [
+                "sha256:539a526e680628b09ab5b06547fb1dd03aa846798c027002bb1e971e9fefd303",
+                "sha256:cd5cda5672e8f9c882fdaaca0c2710465ae8d82bc44f5c1cc71fe89bc1c219cb"
+            ],
+            "index": "pypi",
+            "version": "==0.0.2.2"
         },
         "tenacity": {
             "hashes": [
