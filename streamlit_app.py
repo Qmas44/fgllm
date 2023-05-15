@@ -4,7 +4,7 @@ import langchain
 from langchain.text_splitter import CharacterTextSplitter
 import faiss
 from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain.embeddings import HuggingFaceHubEmbeddings
 from langchain import OpenAI, LLMChain
 from langchain.prompts import PromptTemplate
 import pickle
@@ -48,7 +48,7 @@ def train():
     for sets in data:
         docs.extend(textSplitter.split_text(sets))
 
-    store = FAISS.from_texts(docs, OpenAIEmbeddings(openai_api_key= st.secrets["OPENAI_API_KEY"]), headers=["page_content"])
+    store = FAISS.from_texts(docs, HuggingFaceHubEmbeddings(huggingfacehub_api_token=st.secrets["HUGGINGFACE_API_TOKEN"]))
     faiss.write_index(store.index, "training.index")
     store.index = None
 
