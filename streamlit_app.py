@@ -83,15 +83,6 @@ prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "cont
 
 llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
-# Create conversation subroutine (Do similarity search in the docs then send to llmChain and come back with answer)
-def onMessage(question, history):
-    docs = store.similarity_search(question)
-    contexts = []
-    for i,doc in enumerate(docs):
-        contexts.append(f"Context {i}:\n{doc.page_content}")
-    answer = llmChain.predict(question=question, context="\n\n".join(contexts), history=history)
-    return answer
-
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
 
@@ -110,6 +101,15 @@ st.markdown(":robot_face: Frame Bot")
 st.text_input("Ask a question > ", placeholder="What is Drive Gauge?", key="text", on_change=submit)
 
 question = st.session_state['temp']
+
+# Create conversation subroutine (Do similarity search in the docs then send to llmChain and come back with answer)
+def onMessage(question, history):
+    docs = store.similarity_search(question)
+    contexts = []
+    for i,doc in enumerate(docs):
+        contexts.append(f"Context {i}:\n{doc.page_content}")
+    answer = llmChain.predict(question=question, context="\n\n".join(contexts), history=history)
+    return answer
 
 if question:
     answer = onMessage(question, history)
