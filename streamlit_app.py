@@ -48,7 +48,7 @@ def train():
     for sets in data:
         docs.extend(textSplitter.split_text(sets))
 
-    store = FAISS.from_texts(docs, OpenAIEmbeddings(openai_api_key= st.secrets["OPENAI_API_KEY"]))
+    store = FAISS.from_texts(docs, OpenAIEmbeddings(openai_api_key= st.secrets["OPENAI_API_KEY"]), headers=["page_content"])
     faiss.write_index(store.index, "training.index")
     store.index = None
 
