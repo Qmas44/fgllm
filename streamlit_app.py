@@ -48,7 +48,7 @@ def train():
     for sets in data:
         docs.extend(textSplitter.split_text(sets))
 
-    store = FAISS.from_texts(docs, OpenAIEmbeddings())
+    store = FAISS.from_texts(docs, OpenAIEmbeddings(openai_api_key= st.secrets["OPENAI_API_KEY"]))
     faiss.write_index(store.index, "training.index")
     store.index = None
 
@@ -102,7 +102,7 @@ st.text_input("Ask a question > ", placeholder="What is Drive Gauge?", key="text
 
 question = st.session_state['temp']
 
-# Create conversation subroutine (Do similarity search in the docs then send to llmChain and come back with answer)
+# Create conversation subroutine (Do similarity search on the store then send to llmChain and come back with answer)
 def onMessage(question, history):
     docs = store.similarity_search(question)
     contexts = []
@@ -115,8 +115,8 @@ if question:
     answer = onMessage(question, history)
     st.session_state.past.append(f"Human: {question}")
     st.session_state.generated.append(f"Bot: {answer}")
-    history.append(f"Human: {question}")
-    history.append(f"Bot: {answer}")
+    history.append(f"Fighter: {question}")
+    history.append(f"Frame Bot: {answer}")
 
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])):

@@ -1,5 +1,5 @@
 ## Welcome to Frame Bot :robot_face:
-<p>This gpt 3.5 powered ai is designed to answer all of your street fighter 6 questions.<br>
+<p>Frame Bot is a gpt 3.5 powered ai designed to answer all of your street fighter 6 questions.<br>
 This can be anything from game mechanics to specific frame data or character specific combos.<p>
 
 This is a work in progress so if you run into any issues please let me know here ->
