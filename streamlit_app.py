@@ -81,7 +81,7 @@ BOT:"""
 # setup prompt to expect to see history, embeddings and question
 prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "context", "question"])
 
-llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0))
+llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
 # Create conversation subroutine (Do similarity search in the docs then send to llmChain and come back with answer)
 def onMessage(question, history):
