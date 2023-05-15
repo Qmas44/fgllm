@@ -11,6 +11,7 @@ pickle-mixin = "*"
 openai = "*"
 tiktoken = "*"
 streamlit-chat = "*"
+huggingface-hub = "*"
 
 [dev-packages]
 
