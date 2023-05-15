@@ -11,6 +11,23 @@ import pickle
 import streamlit as st
 from streamlit_chat import message
 
+st.set_page_config(
+   page_title="Frame Bot",
+   page_icon=":robot_face:",
+   initial_sidebar_state="collapsed",
+   menu_items={
+        'About': "This is a fighting game chat bot!"
+    }
+)
+
+def read_markdown_file():
+    path = Path('introduction.md')
+    return path.read_text()
+
+intro_markdown = read_markdown_file()
+
+st.sidebar.markdown(intro_markdown, unsafe_allow_html=True)
+
 if "OPENAI_API_KEY" not in os.environ:
   print("You must set an OPENAI_API_KEY using the Secrets tool", file=sys.stderr)
   exit()
@@ -93,7 +110,7 @@ def submit():
     st.session_state['text'] = ''
 
 history = []
-st.title("Fighting Game Bot")
+st.markdown(":robot_face: Frame Bot")
 st.text_input("Ask a question > ", placeholder="What is Drive Gauge?", key="text", on_change=submit)
 
 question = st.session_state['temp']
