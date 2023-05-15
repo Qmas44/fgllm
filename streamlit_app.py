@@ -28,10 +28,6 @@ intro_markdown = read_markdown_file()
 
 st.sidebar.markdown(intro_markdown, unsafe_allow_html=True)
 
-if "OPENAI_API_KEY" not in os.environ:
-  print("You must set an OPENAI_API_KEY using the Secrets tool", file=sys.stderr)
-  exit()
-
 # Pull training data from the training folder and store in vector store with caching
 def train():
     trainingData = list(Path('training/').rglob("**/*.*"))
