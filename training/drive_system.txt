@@ -56,8 +56,7 @@ offensive style can also make it harder for the opponent to push you back into t
 where Burnout becomes much more dangerous.
 Drive Impact (DI)
 Costs 1 Drive Stock. Input + (HP+HK) to perform.
-St Act Rec Blk Adv Dmg
-26(27) 2 35 -3 800
+DI startup frames are 26(27 on whiff), active for 2 frames, recovery is 35 frames, block advantage is -3 and it does 800 dmg
 Drive Impact (DI) is a forward-lunging strike with 2 hits of armor during the startup
 frames, allowing it to absorb and counter the opponent's attacks. If DI absorbs an attack or hits as a Punish Counter, the
 opponent will be left in a crumple state on hit. The threat of DI makes it risky to throw out mid-range projectiles or
