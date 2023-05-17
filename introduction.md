@@ -24,6 +24,8 @@ You can enter any street fighter 6 related question into the chat and frame bot 
 **Feel free to give it specific questions related to different characters or even character interactions ie: 'What is the best way to punish Ryu's heavy dragon punch with Ken?'**
 
 ### What are some common quesitons asked?
+- What is Street Fighter 6?
+- Who are the characters in Street Fighter 6?
 - What is the best way to punish Ryu's heavy dragon punch with Ken?
 - What is Ryu's most optimal corner combo?
 - Is it possible to combo into Ryu's super from his heavy dragon punch?
@@ -33,3 +35,6 @@ Depending on the question, it may take some time for the AI to comprehend and pr
 
 ### Can I change chat my avatar?
 We are currently working on implementing the ability to change the avatars for both the chatter and the bot. Stay tuned for updates!
+
+
+_All art _

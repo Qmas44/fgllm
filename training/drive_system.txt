@@ -2,7 +2,7 @@ Drive Gauge
 Both players start each round with 6 bars of Drive Gauge, which can be spent on various offensive, defensive, and movement
 techniques. When the gauge is not full, it automatically regenerates over time. Drive Gauge management is fundamental to
 the game's strategy; players with better management will have a huge advantage over those who manage it poorly. It allows
-for playstyles from slow and conservative to reckless gambling, making the Drive system a vehicle for player selfexpression.
+for playstyles from slow and conservative to reckless gambling, making the Drive system a vehicle for player self expression.
 Note: When reading frame data, 1 Bar = 10,000 Drive
 meter; in most cases, a simple decimal is used instead
 (e.g. 1.7 Drive).
@@ -12,13 +12,7 @@ to be chipped away. The weakest attacks can chip around 5% of a Drive bar, while
 This weakens passive, defensive playstyles significantly; defensive-minded players will have to focus more on their
 positioning, and using techniques like Drive Parry to mitigate this disadvantage. Some attacks like Drive Impact, Super Arts,
 and any Punish Counter also drain the Drive Gauge when they hit.
-Drive System
-Drive Move Drive Gauge Cost
-Drive Impact
-Drive Parry (Hold)
-Drive Rush (from Parry)
-Drive Rush (cancel)
-Overdrive Specials
+
 Drive Reversal
 It's important to note that any Drive action can be performed, even if only a pixel of the Drive Gauge remains. This is great
 for securing a KO at the end of a round, since the Burnout penalty does not carry over into the following round.
