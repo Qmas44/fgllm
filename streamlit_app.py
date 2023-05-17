@@ -98,7 +98,7 @@ BOT:"""
 # setup prompt to expect to see history, embeddings and question
 prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "context", "question"])
 
-# llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
+#llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
 if 'streamlit_chat' not in st.session_state:
     st.session_state['streamlit_chat'] = []
@@ -132,7 +132,7 @@ def submit():
 
     question = st.session_state['temp']
 
-    answer = 'test' # onMessage(question, history)
+    answer = 'test' #onMessage(question, history)
 
     history.append(f"Fighter: {question}")
     history.append(f"Frame Bot: {answer}")
@@ -145,7 +145,7 @@ if st.session_state['generated']:
     # Reverse iteration through the list
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         # message from streamlit_chat
-        message(st.session_state['generated'][::-1][i], key=str(i))
         message(st.session_state['past'][::-1][i], is_user=True, key=str(i) + '_user', avatar_style="adventurer", seed=123)
+        message(st.session_state['generated'][::-1][i], key=str(i))
 
 st.text_input("Ask a question > ", max_chars=150, placeholder="What is Drive Gauge?", key="text", on_change=submit)
