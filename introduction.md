@@ -1,3 +1,13 @@
+<style
+    type="text/css">
+    .stApp {
+        background-image: url('');
+        background-attachment: fixed;
+        background-size: cover
+    }
+</style>
+<img style="vertical-align: center; margin-left: 40px;" src="https://i.imgur.com/EsVHRlW.png" alt="" width="80%" height="50%">
+
 ## Welcome to Frame Bot :robot_face:
 <p>Frame Bot is a gpt 3.5 powered ai designed to answer all of your street fighter 6 questions.<br>
 This can be anything from game mechanics to specific frame data or character specific combos.<p>

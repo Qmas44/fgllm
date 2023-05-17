@@ -1,5 +1,6 @@
 import os, sys
 from pathlib import Path
+import base64
 import langchain
 from langchain.text_splitter import CharacterTextSplitter
 import faiss
@@ -26,9 +27,19 @@ st.set_page_config(
     }
 )
 
+def hide_anchor_link():
+    st.markdown("""
+        <style>
+        .css-15zrgzn {display: none}
+        .css-eczf16 {display: none}
+        .css-jn99sy {display: none}
+        </style>
+        """, unsafe_allow_html=True)
+hide_anchor_link()
+
 intro_markdown = read_file('introduction.md')
 
-html_file = read_file('custom_html.html')
+chat_box = read_file('chat_box.md')
 
 st.sidebar.markdown(intro_markdown, unsafe_allow_html=True)
 
@@ -87,7 +98,7 @@ BOT:"""
 # setup prompt to expect to see history, embeddings and question
 prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "context", "question"])
 
-llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
+# llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
 if 'streamlit_chat' not in st.session_state:
     st.session_state['streamlit_chat'] = []
@@ -101,9 +112,7 @@ if 'past' not in st.session_state:
 if "temp" not in st.session_state:
     st.session_state['temp'] = ''
 
-st.markdown(":robot_face: Frame Bot")
-
-components.html(html_file,scrolling=True)
+st.markdown(chat_box, unsafe_allow_html=True)
 
 # Create conversation subroutine (Do similarity search on the store then send to llmChain and come back with answer)
 def onMessage(question, history):
@@ -123,7 +132,7 @@ def submit():
 
     question = st.session_state['temp']
 
-    answer =  onMessage(question, history)
+    answer = 'test' # onMessage(question, history)
 
     history.append(f"Fighter: {question}")
     history.append(f"Frame Bot: {answer}")
