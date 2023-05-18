@@ -99,7 +99,7 @@ BOT:"""
 # setup prompt to expect to see history, embeddings and question
 prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "context", "question"])
 
-llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
+#llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
 if 'streamlit_chat' not in st.session_state:
     st.session_state['streamlit_chat'] = []
@@ -133,7 +133,7 @@ def submit():
 
     question = st.session_state['temp']
 
-    answer = onMessage(question, history)
+    answer = 'test' #onMessage(question, history)
 
     history.append(f"Fighter: {question}")
     history.append(f"Frame Bot: {answer}")
