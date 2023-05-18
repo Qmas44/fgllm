@@ -1,0 +1,241 @@
+Frame data
+The word "frame" is used to represent the smallest unit of time in the game. In SF6 and most fighting games, one frame is 1/60 of a second, since the game runs at 60 frames per second. 
+Every action a character takes, like walking, jumping, attacking, or blocking, can be measured in terms of frames. Frames are often abbreviated with the letter "f", as in 60f = 60 frames.
+As an example, if Chun-Li has a backdash with a duration of 25 frames, this is equal to 25/60 or 5/12 of a second in real time. 
+If you have a 5 frame window to input a combo link, this is a timing window of 5/60 or 1/12 of a second to properly time the combo.
+When one character makes contact with another, both will be "stuck" for some period of time. 
+Usually, one character will be able to act again before the opponent has fully recovered; this situation is referred to as "Frame Advantage" (or more specifically Hit Advantage, Block Advantage, Knockdown Advantage, etc). 
+Frame Advantage is represented with a plus or minus sign; +3 means the character can act 3 frames before the opponent, while -6 means the opponent can act 6 frames before you; 0 indicates a neutral advantage where both characters can act simultaneously.
+
+Move Stages
+Keeping in mind that all actions are measured in frames, moves can be further divided into phases called Startup, Active, and Recovery. Knowing the definition of each will make it much easier to interpret Frame Data.
+
+Startup: The beginning portion of an attack before it can hit the opponent; think "winding up for a punch"
+Active: The portion of an attack that can hit or grab the opponent
+Recovery: The ending portion of an attack that can no longer connect with the opponent, and the attacker is unable to perform any other action such as blocking.
+
+It's important to note that in modern Street Fighter games, Startup is measured to also include the first Active frame (known as FAF or First Active Frame startup). 
+This is done to make it easier to understand which moves can be used in combos and in punishes (e.g. a move with +5 Advantage combos into a move with 5 frame startup; a move with 7 frame startup can punish a move with -7 Disadvantage). 
+This means that if you want to know the total frame count of an attack, you should add Startup + Active + Recovery frames and then subtract 1 to account for that overlap.
+
+Hitstun, Blockstun, and Hitstop
+When you land an attack, the opponent gets "stuck" for a fixed amount of time from the impact.
+Hitstun - the opponent is stuck in a reeling animation from the hit. Any followup attack that connects while the opponent is stuck in hitstun results in a combo.
+Blockstun - the opponent is stuck in a blocking pose. Causing the opponent to block a series of attacks is a blockstring; if the opponent never exits blockstun, it is a true blockstring.
+Hitstop - also known as "Hit Freeze"; time essentially stops for both characters, making a move feel more impactful. Heavier attacks have longer hitstop, and some Punish Counters with special effects can have extra long hitstop. In addition to making the hits look more natural, hitstop helps to give players time to input a special move cancel and hitconfirm followup attacks.
+
+Hit Priority
+Street Fighter 6 does not use a normal priority system for attacks like the one found in SFV. This means that any two attacks that collide on the same frame will cause a "trade", unless one of the attacks has invincibility frames. 
+Both hits will be considered a Counterhit, and the usual effects (hitstun, knockdown) will apply depending on the attack. Unlike most previous SF titles, strikes actually have priority over throws when they collide on the same frame. 
+This makes tick throw pressure slightly worse in situations where a character has very slight frame advantage.
+
+Projectile Priority
+In Street Fighter 6, clashing projectiles are now subject to a priority system. The general rule is Super Art > OD Projectile > Meterless Projectile. 
+Projectiles of the same priority will clash in the same way as previous games. When a higher priority projectile clashes with a lower priority projectile, it will still be slowed down by the clash, but will not lose any hits in the process.
+As an example, Guile can create a meterless 2-hit projectile with Sonic Blade into Sonic Cross. If he uses this against Ryu's 2-hit OD Hadoken, the fireballs will clash twice before the Hadoken continues, retaining both of its hits. 
+If Guile throws out five Sonic Break projectiles during his Lv.2 Super, Ryu's OD Hadoken would clash with each one individually with the same end result.
+Luke's Flash Knuckle has the ability to clash with projectiles, and is considered to be at the lowest (meterless) priority. 
+Against a meterless projectile, Luke can cancel the clash into his Lv.3 Super, but this cancel is impossible when clashing with a higher priority projectile.
+
+Damage Scaling
+As more hits are used in a combo, the damage of each successive attack is reduced. This system, known as "damage scaling", allows longer combos to exist without being overwhelmingly powerful. 
+Most extended combo sequences require the use of Drive or Super meter, so the tradeoff of lower marginal damage adds complexity to the decision of whether or not to spend those resources. 
+Note that Drive and Super meter build do not scale the same way as damage.
+The general progression of damage scaling depends on how the combo is started:
+
+Damage Scaling
+Attack #    General Scaling	LightNormalStarter Cancellable 2MK Starter
+1st Attack	100%	100%	100%
+2nd Attack	100%	90%	80%
+3rd Attack	80%	80%	70%
+4th Attack	70%	70%	60%
+5th Attack	60%	60%	50%
+6th Attack	50%	50%	40%
+7th Attack	40%	40%	30%
+8th Attack	30%	30%	20%
+9th Attack	20%	20%	10%
+10th + Attack	10%	10%	10%
+
+Note: Light Normal scaling only applies when starting a combo with LP or LK; it also does not apply to jumping Light normals or Light command normals.
+2MK scaling only applies when starting the combo (not when linked mid-combo), and does not apply to a non-cancellable 2MK like Kimberly's.
+
+For scaling purposes, an "attack" corresponds to each move that is input by the player, not the number of hits performed by the character. 
+This means that a move like Chun-Li's Lightning Kicks only counts as one attack, while Jamie's 236P~6P~6P (Freeflow Strikes) sequence counts as 3 separate attacks. 
+Target Combos like Kimberly's 5LP~MP~HP~HK sequence also count each hit separately for the purpose of damage scaling.
+
+Any punish after Perfect Parry multiplies the damage scaling by 50% (so a standard combo would look like 50 -> 50 -> 40 -> 35 -> 30...). 
+There is no way to mitigate this by delaying the punish - if the followup is not scaled, then the opponent's move has recovered and it wasn't a true punish.
+
+When Drive Rush is used raw to start a combo:
+No additional scaling penalty; (any other applicable scaling penalties, such as 2MK starters, still apply)
+When used mid-combo (regardless of whether it was cancelled into; also applies after Drive Impact Stun):
+All remaining hits in the combo have an additional 15% scaling penalty (plus any other scaling that applies)
+This scaling is rounded down to the nearest whole number (59.5 -> 59)
+Using Drive Rush multiple times per combo does not stack an additional penalty
+Example combo using Drive Rush cancel and standard scaling progression:
+100% -> 85% -> 68% -> 59% -> 51% -> 42% -> 34% -> 25% -> 17% -> 8%...
+
+If Drive Impact is blocked near the corner into a Wall Splat juggle ("CRUSH" icon will appear):
+All followup have an additional 20% scaling penalty (plus any other scaling that applies)
+Because the DI was blocked, it does not count as the first hit of a combo
+80% -> 80% -> 64% -> 56% -> 48% ...
+If any of the following occur:
+DI hits for a crumple (Punish Counter, or hitting after armor absorb);
+DI hits near the corner for a Wall Splat juggle;
+DI connects on hit/block near corner vs. opponent in Burnout ("STUN" icon will appear, opponent becomes dizzy)
+
+Walking
+The speed at which a character walks is not universal; a faster walk speed is desirable, but a slow walk speed is not necessarily indicative of a weak character. 
+A faster forward walk makes it easier to gain ground against a zoning opponent, walk in for tick throws, and generally apply offense. Walking forward also allows characters to build additional Drive gauge; this can actually be stronger on slow characters, as they can hold forward for a longer time without reaching the opponent. 
+A faster back walk speed makes it easier to create separation on defense, as well as walk in and out of the opponent's attack range to bait a response. It may also allow certain characters to escape common tick throw setups.
+
+Tap twice in either direction (66 or 44) to perform a Dash. Compared to walking, a Dash covers ground more quickly in exchange for higher commitment; you are vulnerable throughout the entire animation and cannot cancel it to block or tech a throw. 
+Backdashes are also Throw Invincible from frames 1-15, making them useful for escaping pressure. Unlike some previous Street Fighter titles, there are no Airborne frames during a backdash, and being hit during the animation does not result in a Counterhit.
+
+Jumps are risky in Street Fighter 6. Most characters have restricted options in the air, and there's no air-blocking. Neutral jumps are useful for avoiding projectiles or baiting an opponent's throw whiff. 
+Back jumps can help gain distance similar to a backdash. Forward jumps are a common method of approaching, but are the easiest for the opponent to predict and anti-air. 
+Mixing up between walking, dashing, and jumping can overload the opponent's reactions, making it possible to get close to the opponent even while using "reactable" movement options.
+
+Classic Notation
+The old standard for expressing inputs in Street Fighter relies on English language abbreviations. You may encounter it very often from veteran players, so here's a basic guide:
+
+All commands assuming player facing right.
+
+"cr." indicates a move performed while crouching i.e. "cr.MK"
+"st." indicates a move performed while standing i.e. "st.HP"
+"QCF" means Quarter Circle Forward (236 in Numpad)
+"QCB" means Quarter Circle Backward (214 in Numpad)
+"DP" or "SRK" means Dragon Punch motion - Forward, Down, Down-Forward (623 in Numpad)
+"RDP" or Reverse Dragon Punch is Back, Down, Down-Back (421 in Numpad)
+"HCF" means Half Circle Forward (41236 in Numpad)
+"HCB" means Half Circle Backward (63214 in Numpad)
+"SPD" or "360" means to rotate the joystick in a full circle in any direction.
+"720" is two rotations of the joystick.
+360/720 is still often used as a shortcut in Numpad notation.
+
+Normal Moves
+Street Fighter 6 uses the standard 6-button layout the series is known for: Light/Medium/Heavy for attack strength and Punch/Kick for attack type.
+There is no "priority system" for normal attacks like the one found in SF5 or SF3. Any two attacks that collide on the same frame will both count as a counterhit. 
+This can create trade combos if a high-hitstun move trades with a low-hitstun move.
+Unlike in previous entries, strikes beat throws when they connect on the same frame. This means that a defensive 4f normal is a strong option against tick throws from +1 advantage or worse.
+There are very few normal attacks with frame advantage in SF6. Light normals can still frame trap the opponent by chaining them together, but they will no longer create true blockstrings, so opponents can counter with invincible reversals or parry. 
+An opponent mashing their own fast light normal will beat most blockstrings other than chained light normals.
+
+Special Moves
+Inputting a specific directional command before pressing an attack button results in a special move. 
+Most special moves have different properties depending on which button strength is used, such as Ryu's Hadoken traveling faster or slower, but some moves do not vary between strengths. 
+By inputting the move with 2 buttons, special moves can be powered up into Overdrive (OD) moves at the cost of 2 stocks of Drive gauge. Overdrive moves have improved properties, such as invincibility, multiple hits, better juggle potential, or simply more damage.
+
+Throws
+You can throw the opponent by pressing LP+LK at close range, or 4+LP+LK to throw them backwards for a side switch. Throws are universally 5f startup and 3f active, with a total whiff animation of 30f. All characters have identical throw ranges.
+Each throw is different in terms of knockdown frame advantage and separation distance; many forward throws allow for "Throw Loops" in the corner where the character lands a throw, then walks or dashes up to the opponent with frame advantage, creating another throw mixup. 
+This is generally impossible midscreen if the opponent Back Rises.
+Regular throws only work on the ground, and will not connect against opponents that are jumping (including pre-jump frames) or using a move with airborne frames. 
+Opponents are also throw invincible during backdashes for the first 15 frames, and some specific attacks can have their own throw invincibility. 
+You cannot throw an opponent if they are in hitstun, blockstun, or knocked down, so they cannot be used in combos. If a throw and a strike connect on the same frame, the strike will take priority (unlike in previous Street Fighter titles).
+When used as a Punish Counter, throws gain 70% extra damage, become a Hard Knockdown preventing Back Rise, and drain 1 bar of Drive Gauge from the opponent. This is particularly notable against Drive Parry, which are in a Punish Counter state when thrown.
+
+Throw Escapes
+You can escape (or "tech") a throw by pressing LP+LK as the opponent's throw connects. Throw techs causes you to push the opponent away, preventing any damage and returning both players to neutral. 
+Only regular throws can be teched; command grabs and air throws cannot. You can input a throw tech until the 9th frame after a throw connects. 
+The large pushback makes a successful throw tech rewarding when cornered, creating enough separation to begin working your way back to midscreen.
+
+Throw Invincibility
+Opponents cannot be thrown during pre-jump frames, or while airborne (except for Air Throws).
+Opponents cannot be thrown while knocked down. There is 1 frame of throw invincibility after wakeup, so inputting a throw at +5 on a downed opponent can connect.
+Opponents cannot be thrown while in hitstun/blockstun. There are 2 frames of throw invulnerability after exiting hitstun/blockstun, so inputting a throw at +4 can lead to a successful tick throw.
+
+Counterhits
+A Counterhit (CH) occurs when you strike your opponent during their startup or active frames. Attacks that trade with each other both land as a counterhit. 
+A yellow "Counter Hit" icon appears on either the P1 or P2 side of the screen, depending on who landed the hit. Counterhits add +2 to the frame advantage of the move, and deal an additional 20% damage. 
+Counterhits that cause a knockdown usually do not gain any extra knockdown frame advantage, except on Sweeps where they generally give the same advantage as Punish Counters.
+
+
+Punish Counters
+A Punish Counter (PC) occurs when you strike your opponent during their recovery frames. When this occurs, it will display "Punish Counter" on the side of the screen. 
+Punish Counters add +4 to the frame advantage of the move, deal 20% more damage, and depletes some of the opponent's Drive meter. 
+Specific heavy normals can gain extra properties when connecting as a Punish Counter, such as extra frame advantage, crumples, tumbling knockdowns, or spinning air juggles. Sweeps (2HK) gain extra knockdown advantage, making it much easier to pressure afterward. 
+This system causes the optimal punish route to vary significantly from the standard confirm combo route for most characters, and makes "barely punishable" moves vulnerable to much larger punishes than in previous Street Fighter titles.
+All normal Throws (including Air Throws) can land as a Punish Counter, gaining a 70% damage boost, Hard Knockdown status, and draining an entire Drive bar from the opponent. 
+Throws will always land as a Punish Counter against Drive Parry. Super Arts can technically hit as a Counterhit or Punish Counter, but do not gain any additional damage, Drive depletion, or knockdown advantage.
+
+Corner Dizzy
+As mentioned in the Burnout section, you can get a free stun combo after landing a Drive Impact on a cornered opponent in Burnout. 
+While the opponent appears to stumble out of the corner, you can always jump forward and safely use your strongest air normal without fear of whiffing or crossing up. If you wait too long, the opponent will fall to the ground, where they can no longer be punished.
+Some characters can take advantage of the dizzy time to stock up on certain effects that are normally unsafe to use freely:
+
+Ryu: Can stock Denjin charge, then j.HP or j.HK
+Kimberly: Can reload a Spraycan, then j.HK (or throw the spraycan to set up a mid-combo juggle)
+Jamie: Can get 1 Drink, then j.HP; 2 Drinks can be followed by a grounded combo, but no jumpin
+Can also get all 4 Drinks to reach max level, but sacrifices the punish entirely
+Juri: Can jump back, whiff 1 LK Fuha Store, then j.HK; whiffing 2 LK Fuha Stores allows a 6HP into grounded combo
+Backdashing also works, but Juri may be left too close and the Fuha Store can hit the opponent
+If Juri landed the Drive Impact from far enough outside the corner, she may be able to whiff 2 Fuha Stores immediately, then j.HK
+
+Combos and Blockstrings
+Linking, chaining, or cancelling attacks together so that they connect before the opponent recovers from hitstun will create a combo. 
+If the opponent is blocking, this is instead known as a blockstring ("true" or "airtight" blockstring may be used to specify that there is no gap for the opponent interrupt). 
+There is an input buffer that makes it easier to time button sequences without requiring precise timing. This buffer is 4 frames, meaning that the most difficult links have a 5 frame input window.
+
+Blocking
+Blocking is performed by holding away from the opponent and will guard against the opponent's attacks. Blocking cannot be performed while airborne or during the recovery of your own attacks.
+Most attacks can be blocked standing or crouching. Overhead/High attacks must be blocked standing, while Low attacks must be blocked crouching.
+Crossup attacks occur when a move hits behind an opponent, usually during a jump-in (usually j.LK or j.MK). These must be blocked by holding forward as though attempting to walk underneath the opponent. 
+Crossups cannot connect on a fully cornered opponent, and can be blocked in either direction. If a cornered character blocks by holding back, the jumping character will land in front; if blocked by holding forward, they will land behind the opponent in the corner.
+
+Auto Guard: when a character is stuck in a "true blockstring" (never exiting blockstun between attacks), they will automatically block mid and overhead attacks even without inputting a block direction. 
+Low attacks must still be blocked low, and overheads will not be successfully auto-guarded if the player holds crouch block. 
+True blockstrings are rare except when the blocking character is in Burnout, as even chained light normals have a gap between hits when blocked.
+
+Proximity Guard: holding back during the startup of an opponent's attack will cause the defending character to enter a blocking animation before the move actually connects. 
+Compared to previous SF games, it has been severely toned down; in general, proximity guard will not be triggered from outside the attack's usual range. 
+Projectiles also have reduced proximity guard activation range, making slow fireballs less effective at controlling the opponent's positioning. 
+Proximity guard still has an impact in neutral, making it harder to walk back out of an opponent's poke range at the last possible moment. Slow, long-range attacks like Drive Impact and some heavy command normals are still very effective at preventing the opponent's back walk during startup.
+
+Throw Techs
+By pressing (LP+LK) shortly after a throw connecting, you can tech a throw. Teching a throw causes you to push the opponent away, preventing any damage and returning both players to neutral. 
+Only regular throws can be teched; command grabs and air throws cannot. Throws that are connecting as a punish during the opponent's recovery cannot be teched. You can input a Throw Tech until the 9th frame after a throw connects.
+
+Drive Parry
+Drive Parry can be used to parry opponents attacks at the cost of drive resource. Drive parry can be done by Holding(MP+MK). 
+Parries can block high/low and left/right while the buttons are held, and results in the same frame advantage as blocking the attack. 
+You also build significant Drive gauge; if you bait the opponent's wakeup Super Art, you can refill your Drive almost entirely just by holding Parry instead of blocking. 
+If perfectly timed, a parry will become a Perfect Parry, allowing for powerful punishes.
+
+Wake-up
+There are two types of wakeups in Street Fighter 6: Normal Rise and Back Rise. There is no difference in the knockdown frame advantage, so meaty setups are unaffected as long as the opponent remains close enough to attack. 
+Inputting 2 buttons upon landing will result in a Back Rise, otherwise Normal Rise occurs. Hard Knockdowns (such as a Throw that connects as a Punish Counter) prevent Back Rise entirely.
+Characters count as standing for one frame on wakeup, even if holding crouch. Meaty attacks that only hit crouchers will still hit. However, waking up with a crouching attack will cause the character to skip this standing frame.
+
+Reversals
+Inputting a Special Move or Super right before wakeup or before exiting hitstun/blockstun allows the move to be buffered as a Reversal. This makes the move easier to time defensively. 
+The most useful reversals are moves with invincibility, as they can beat attacks that are hitting "meaty". Only OD Special Moves and Supers can have true invincibility on startup, but not all of them do.
+There is a 4 frame buffer when performing a reversal on wakeup or out of hitstun, blockstun, or air reset. 
+This means that you have a 5 frame window to time the reversal on the first possible frame that you are able to act. This also applies to things like normals, throws, or Drive Impact, but buffering Drive Parry will not allow you to get a Perfect Parry.
+
+Armor
+Drive Impacts and some special moves (e.g. Luke 236KK) can absorb attacks with a property known as "armor". This only works against strikes and projectiles; any Throw will beat an armored move. 
+Some moves, like Super Arts and Drive Reversals, also have an Armor Break property that prevent armor absorption.
+
+When absorbing an attack, the character takes recoverable damage. This means that armor is not useful when at low health, since a KO will occur. 
+Many players will instinctually try to counter a Drive Impact with a DI of their own, not realizing that they don't have enough health to survive the armored hit. 
+While these weaknesses makes it a bit weaker than true invincibility, armored moves can still be a useful tool in your defensive playbook.
+
+Anti-Airs
+An Anti-Air is an attack used to interrupt an opponent's jump attack. This is usually done with a normal, special, or super that hits upwards like an uppercut. 
+Many specials like Ryu/Ken's Shoryuken, Guile's Somersault Kick, or Kimberly's Bushin Senpukyaku have invincibility frames against airborne attacks, making them particularly useful as anti-airs. 
+(Note: these AA Invuln moves also work against airborne attacks like Chun-Li's 6HK, but many attacks that appear airborne actually are not, like Guile 6HK).
+
+Not all characters have useful anti-airs at every range. Other techniques for countering air attacks include jumping with a quick air attack of your own (known as "air-to-air). 
+This is most effective when done with a fast light normal, an air normal that causes a knockdown, or an Air Throw.
+
+Against close jumps, walking under the opponent may cause their attack to whiff, which can open them up to a Punish Counter during their landing recovery frames.
+It is also possible to Low Profile some air attacks by using a move that shifts your hurtbox very low to the ground.
+
+Some air attacks can alter the trajectory of a jump-in, making the character more difficult to anti-air consistently. 
+In general, attacks like this are put into a "Forced Knockdown" state if they are hit while airborne, which makes it more rewarding to interrupt these attacks.
+
+Punishes
+When practicing punish combo routes, it's important to remember that your first attack will have 4 extra frames of hit advantage. 
+This can potentially open up far stronger combo routes than are normally possible. In many cases, light normals are designed to only combo into weaker versions of special moves or a low-damage Target Combo. 
+By linking into a longer range medium/heavy normal or cancelling into a slower launching special move, the damage potential is much higher.

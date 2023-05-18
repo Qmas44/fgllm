@@ -1,0 +1,6 @@
+Glossary
+
+Active
+The period of time that a move has a hitbox and is capable of doing damage to the opponent. It's one of the three stages of an attack, along with startup and recovery, and is measured in frames. 
+After your move undergoes some brief startup (the windup phase), then the active period starts, where your character's fist is finally able to connect with your friend's jaw. 
+Then, you have to suffer the recovery (the cooldown phase) before you can move again.
