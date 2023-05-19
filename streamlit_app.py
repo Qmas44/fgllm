@@ -86,12 +86,13 @@ I want you to be a teach and explain things as if I had never played a fighting 
 
 If any questions are asked that you don't know the answer to, please say "Sorry, I'm not sure. Is there anything else I can help you with?" and move on to the next question.
 If any questions are asked that aren't related to Street Fighter or fighting games, please say "Sorry, I'm not sure. please ask a question related to Street Fighter" and move on to the next question.
+Make sure to check the list of characters playable in Street fighter 6 before answering any questions. If a question is asked about a character that isn't playable in Street Fighter 6, please say "Sorry, I'm not sure. This character isn't playable in Street Fighter 6. Is there anything else I can help you with?" and move on to the next question.
 
 Use the following pieces of MemoryContext to answer the questions at the end. Also remember ConversationHistory is a list of Conversation objects.
 ---
 ConversationHistory: {history}
 ---
-MemoryContext: {context}
+MemoryContext: {context}----------------
 ---
 Human: {question}
 BOT:"""
@@ -99,7 +100,7 @@ BOT:"""
 # setup prompt to expect to see history, embeddings and question
 prompt = PromptTemplate(template=masterPrompt, input_variables=["history", "context", "question"])
 
-#llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
+llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0, openai_api_key= st.secrets["OPENAI_API_KEY"]))
 
 if 'streamlit_chat' not in st.session_state:
     st.session_state['streamlit_chat'] = []
@@ -133,7 +134,7 @@ def submit():
 
     question = st.session_state['temp']
 
-    answer = 'test' #onMessage(question, history)
+    answer = onMessage(question, history)
 
     history.append(f"Fighter: {question}")
     history.append(f"Frame Bot: {answer}")

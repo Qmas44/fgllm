@@ -239,3 +239,6 @@ Punishes
 When practicing punish combo routes, it's important to remember that your first attack will have 4 extra frames of hit advantage. 
 This can potentially open up far stronger combo routes than are normally possible. In many cases, light normals are designed to only combo into weaker versions of special moves or a low-damage Target Combo. 
 By linking into a longer range medium/heavy normal or cancelling into a slower launching special move, the damage potential is much higher.
+
+Characters / Roster for street fighter 6
+Ryu, Luke, Chun-Li, Guile, Jamie, Kimberly, Juri, Blanka, Dhalsim, E.Honda, Dee Jay, Manon, Marisa, JP, Zangief, Lily, Cammy
