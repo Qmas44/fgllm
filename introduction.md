@@ -37,8 +37,10 @@ Depending on the question, it may take some time for the AI to comprehend and pr
 ### Can I change chat my avatar?
 We are currently working on implementing the ability to change the avatars for both the chatter and the bot. Stay tuned for updates!
 
-``` 
+---
 
 Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.
+
 Credit goes out to SuperCombo wiki for the frame data and character information.
+
 Credit to Fighting Game Glossary by infil for fight game terminology.

@@ -1,0 +1,115 @@
+Normals
+2HK: Deals 900 damage, low block, no cancel, startup 9 frames, active 3 frames, recovery 23 frames, hit adv +32 (HKD), block adv -11.
+2HP: Deals 900 damage, low-high block, special/super cancel, startup 9 frames, active 6 frames, recovery 21 frames, hit adv +3, block adv -7.
+2LK: Deals 200 damage, low block, counter hit, startup 5 frames, active 2 frames, recovery 10 frames, hit adv +3, block adv -3.
+2LP: Deals 300 damage, low-high block, counter hit, special/super/super cancel, startup 4 frames, active 2 frames, recovery 9 frames, hit adv +4, block adv -1.
+2MK: Deals 500 damage, low block, special/super cancel, startup 8 frames, active 3 frames, recovery 19 frames, hit adv +1, block adv -6.
+2MP: Deals 700 damage, low-high block, special/super cancel, startup 6 frames, active 3 frames, recovery 14 frames, hit adv +5, block adv 0.
+4HK: Deals 400*400 (800) damage, low-high block, special/super cancel, startup 10 frames, active 5(5)3 frames, recovery 21 frames, hit adv 0, block adv -4.
+4HP: Deals 800 damage, low-high block, special/super cancel, startup 7 frames, active 4 frames, recovery 25 frames, hit adv +1, block adv -13.
+5HK: Deals 900 damage, low-high block, no cancel, startup 12 frames, active 4 frames, recovery 20 frames, hit adv +9, block adv +1.
+5HP: Deals 800 damage, low-high block, special/super/two-button cancel, startup 10 frames, active 5 frames, recovery 18 frames, hit adv +3, block adv -2.
+5LK: Deals 300 damage, low-high block, special/super cancel, startup 5 frames, active 3 frames, recovery 11 frames, hit adv +2, block adv -4.
+5LP: Deals 300 damage, low-high block, counter hit, special/super/super cancel, startup 4 frames, active 3 frames, recovery 7 frames, hit adv +4, block adv -1.
+5MK: Deals 700 damage, low-high block, no cancel, startup 9 frames, active 3 frames, recovery 18 frames, hit adv +4, block adv -4.
+5MP: Deals 600 damage, low-high block, special/super/two-button cancel, startup 6 frames, active 4 frames, recovery 11 frames, hit adv +7, block adv -1.
+6HK: Deals 800 damage, low-high block, special cancel, startup 16 frames, active 4 frames, recovery 20 frames, hit adv +2, block adv -4.
+6HP: Deals 400400 (800) damage, low-high block, no cancel, startup 20 frames, active 23 frames, recovery 16 frames, hit adv +6, block adv +1.
+6MP: Deals 300*300 (600) damage, high block, no cancel, startup 20 frames, active 4 frames, recovery 19 frames, hit adv +2, block adv -3.
+j.HK: Deals 500 damage, high block, no cancel, startup 12 frames, active 8 frames, landing recovery, no hit/block adv.
+j.HP: Deals 800 damage, high block, no cancel, startup 9 frames, active 6 frames, landing recovery, no hit/block adv.
+j.LK: Deals 300 damage, high block, no cancel, startup 6 frames, active 10 frames, landing recovery, no hit/block adv.
+j.LP: Deals 300 damage, high block, no cancel, startup 4 frames, active 10 frames, landing recovery, no hit/block adv.
+j.MK: Deals 500 damage, high block, no cancel, startup 7 frames, active 6 frames, landing recovery, no hit/block adv.
+j.MP: Deals 350350 (700) damage, high block, special cancel, startup 8 frames, active 23 frames, landing recovery, no hit/block adv.
+
+Target Combos
+MP~LK: Deals 300600 (900) damage, low-high block, two-button cancel, startup 6+5 frames, active 43 frames, recovery 16 frames, hit adv +1, block adv -7.
+MP~LK~HK: Deals 300600720 (1620) damage, low-high block, no cancel, startup 6+5+16 frames, active 434 frames, recovery 20 frames, hit adv KD +36, block adv -8.
+HP~HK: Deals 8001000 (1800) damage, low-high block, no cancel, startup 10+9 frames, active 54 frames, recovery 20 frames, hit adv KD +36, block adv -8(-18).
+
+Supers
+Hadoken 236LP: Deals 600 damage, must be blocked low, cannot be canceled. It has a startup of 16 frames, lasts for an unspecified number of active frames, and has a recovery of 31 frames. On hit, it has an advantage of -1, and on block, it has an advantage of -5.
+
+Hadoken 236MP: Inflicts 600 damage, must be blocked low, and cannot be canceled. It has a startup of 14 frames, an undefined number of active frames, and a recovery of 33 frames. When it connects, it grants a disadvantage of -3, and when blocked, it grants a disadvantage of -7.
+
+Hadoken 236HP: Causes 600 damage, requiring a low block, and is not cancelable. It has a 12-frame startup, an unspecified number of active frames, and a recovery time of 35 frames. On hit, it provides a disadvantage of -5, and on block, it provides a disadvantage of -9.
+
+Hadoken 236PP: Delivers 400*400 (800) damage, demands a low block, and can be canceled with two different options (su2 and su3). It has a startup of 12 frames, an unspecified number of active frames, and a recovery time of 28 frames. On hit, it causes a hard knockdown (KD) with an advantage of +54, while on block, it has an advantage of -1.
+
+Denjin Charge Hadoken 236P: Inflicts 400*400 (800) damage, requires a low block, and is cancelable. It has a startup of 12 frames, an unspecified number of active frames, and a recovery of 30 frames. On hit, it causes a hard knockdown (KD) with an advantage of +52, and on block, it has an advantage of -3.
+
+Hadoken 236LP: Deals 600 damage, must be blocked low, cannot be canceled. It has a startup of 16 frames, lasts for an unspecified number of active frames, and has a recovery of 31 frames. On hit, it has an advantage of -1, and on block, it has an advantage of -5.
+
+Hadoken 236MP: Inflicts 600 damage, must be blocked low, and cannot be canceled. It has a startup of 14 frames, an undefined number of active frames, and a recovery of 33 frames. When it connects, it grants a disadvantage of -3, and when blocked, it grants a disadvantage of -7.
+
+Hadoken 236HP: Causes 600 damage, requiring a low block, and is not cancelable. It has a 12-frame startup, an unspecified number of active frames, and a recovery time of 35 frames. On hit, it provides a disadvantage of -5, and on block, it provides a disadvantage of -9.
+
+Hadoken 236PP: Delivers 400*400 (800) damage, demands a low block, and can be canceled with two different options (su2 and su3). It has a startup of 12 frames, an unspecified number of active frames, and a recovery time of 28 frames. On hit, it causes a hard knockdown (KD) with an advantage of +54, while on block, it has an advantage of -1.
+
+Denjin Charge Hadoken 236P: Inflicts 400*400 (800) damage, requires a low block, and is cancelable. It has a startup of 12 frames, an unspecified number of active frames, and a recovery of 30 frames. On hit, it causes a hard knockdown (KD) with an advantage of +52, and on block, it has an advantage of -3.
+
+Denjin Charge Hadoken 236PP: Deals 300300400 (1000) damage, requiring a low block, and can be canceled with two different options (su2 and su3). It has a startup of 12 frames, an unspecified number of active frames, and a recovery time of 26 frames. On hit, it causes a hard knockdown (KD) with an advantage of +57, while on block, it has an advantage of +2.
+
+Shoryuken 623LP: Inflicts 1100 (800) damage, demands a low block, and can be canceled. It has a startup of 5 frames, lasts for 10 active frames, and has a recovery of 21 frames followed by landing. On hit, it causes a hard knockdown (KD) with an advantage of +38, and on block, it has a disadvantage of -21.
+
+Shoryuken 623MP: Causes 1200 (800) damage, requiring a low block, and can be canceled. It has a startup of 6 frames, lasts for 10 active frames, and has a recovery of 30 frames followed by landing. On hit, it causes a hard knockdown (KD) with an advantage of +34, and on block, it has a disadvantage of -30.
+
+Shoryuken 623HP: Delivers 1400 (800) damage, must be blocked low, and can be canceled. It has a startup of 7 frames, lasts for 10 active frames, and has a recovery of 34 frames followed by landing. On hit, it causes a hard knockdown (KD) with an advantage of +29, and on block, it has a disadvantage of -37.
+
+Shoryuken 623PP: Inflicts 800800 (1600) damage, requiring a low block, and cannot be canceled. It has a startup of 7 frames, lasts for 28 active frames, and has a recovery of 37 frames followed by landing. On hit, it causes a hard knockdown (KD) with an advantage of +29, and on block, it has a disadvantage of -40.
+
+Tatsumaki Senpu-kyaku 214LK: Deals 800 damage, must be blocked low, and cannot be canceled. It has a startup of 12 frames, lasts for 3 active frames, and has a recovery of 14 frames followed by landing. On hit, it causes a knockdown (KD) with an advantage of +35, and on block, it has a disadvantage of -14.
+
+Tatsumaki Senpu-kyaku 214MK: Inflicts 900 damage, demands a low block, and cannot be canceled. It has a startup of 14 frames, lasts for 2(13)2 active frames, and has a recovery of 11 frames followed by landing. On hit, it has two possible advantages: +23 or +38, depending on the timing, and on block, it has a disadvantage of -12 or -27, again depending on the timing.
+
+Tatsumaki Senpu-kyaku 214HK: Causes 1000 damage, requiring a low block, and cannot be canceled. It has a startup of 16 frames, lasts for 2(13)2(13)2 active frames, and has a recovery of 14 frames followed by landing. On hit, it has three possible advantages: +20, +35, or +50, depending on the timing, and on block, it has a disadvantage of -12, -27, or -42, also depending on the timing.
+
+Tatsumaki Senpu-kyaku 214KK: Delivers 200x5 (1000) damage, must be blocked low, and cannot be canceled. It has a startup of 13 frames, lasts for 2(4)2(4)2(3)2(4)2 active frames, and has a recovery of 10 frames followed by landing. On hit, it causes a knockdown (KD) with an advantage of +57, and on block, it has a disadvantage of -14.
+
+Aerial Tatsumaki Senpu-kyaku j.214K: Inflicts 900 damage, requires a low block, and cannot be canceled. It has a startup of 11 frames, lasts for 2(5)2(6)2 active frames, and has a recovery of 14 frames upon landing. On hit, it causes a knockdown (KD) with an advantage of +48 (+54 if executed perfectly), and on block, it has a slight advantage of -1 (+5 if executed perfectly).
+
+Aerial Tatsumaki Senpu-kyaku j.214KK: Deals 1500 damage, demands a low block, and cannot be canceled. It has a startup of 11 frames, lasts for 2(1)3(1)3(1)3(2)2 active frames, and has a recovery of 14 frames upon landing. On hit, it causes a knockdown (KD) with an advantage of +47 (+50 if executed perfectly), and on block, it has a disadvantage of -16 (-30 if executed perfectly).
+
+High Blade Kick 236LK: Causes 1000 damage, requiring a low block, and can be canceled. It has a startup of 15 frames, lasts for 9 active frames, and has a recovery of 22 frames. On hit, it causes a knockdown (KD) with an advantage of +35, and on block, it has a disadvantage of -11.
+
+High Blade Kick 236MK: Delivers 1100 damage, must be blocked low, and can be canceled. It has a startup of 18 frames, lasts for 9 active frames, and has a recovery of 19 frames. On hit, it causes a knockdown (KD) with an advantage of +40, and on block, it has a disadvantage of -8.
+
+High Blade Kick 236HK: Inflicts 1300 damage, requires a low block, and can be canceled. It has a startup of 29 frames, lasts for 9 active frames, and has a recovery of 16 frames. On hit, it causes a knockdown (KD) with an advantage of +45, and on block, it has a disadvantage of -5.
+
+High Blade Kick 236KK: Deals 800 damage, must be blocked low, and can be canceled with two different options (su2 and su3). It has a startup of 18 frames, lasts for 5 active frames, and has a recovery of 33 frames. On hit, it causes a wall bounce with an advantage of +45 to +65, and on block, it has a disadvantage of -18.
+
+Hashogeki 214LP: Inflicts 700 damage, must be blocked low, and can be canceled. It has a startup of 12 frames, lasts for 6 active frames, and has a recovery of 18 frames. On hit, it has an advantage of +2, and on block, it has a disadvantage of -4.
+
+Hashogeki 214MP: Causes 800 damage, requiring a low block, and can be canceled. It has a startup of 19 frames, lasts for 6 active frames, and has a recovery of 17 frames. On hit, it has an advantage of +2, and on block, it has a disadvantage of -5.
+
+Hashogeki 214HP: Delivers 400*400 (800) damage, demands a low block, and can be canceled. It has a startup of 30 frames, lasts for 6 active frames, and has a recovery of 19 frames. On hit, it causes a knockdown (KD) with a spinning effect and an advantage of +61, and on block, it has a slight advantage of +2 or +3.
+
+Hashogeki 214PP: Inflicts 900 damage, must be blocked low, and can be canceled with two different options (su2 and su3). It has a startup of 18 frames, lasts for 6 active frames, and has a recovery of 20 frames. On hit, it has an advantage of +3, and on block, it has an advantage of +3.
+
+Denjin Charge Hashogeki 214P: Causes 400*400 (800) damage, requiring a low block, and can be canceled. It has a startup of 21 frames, lasts for 6 active frames, and has a recovery of 18 frames. On hit, it causes a knockdown (KD) with a spinning effect and an advantage of +62, and on block, it has an advantage of +3.
+
+Denjin Charge Hashogeki 214PP: Deals 600 damage, must be blocked low, and can be canceled with two different options (su2 and su3). It has a startup of 18 frames, lasts for 6 active frames, and has a recovery of 19 frames. On hit, it causes a crumple effect with an advantage of +87, and on block, it has an advantage of +4.
+
+Denjin Charge 22P: Does not have specified damage, guard, cancel, or startup. It has an unspecified number of recovery frames.
+
+Specials
+Shinku Hadoken (236236P): This move unleashes a powerful Hadoken with multiple hits, dealing 400 damage per hit (totaling 2000). It is a high-low (LH) attack and cannot be canceled. The startup is 8 frames, and it has a recovery of 79 frames. On hit, it leaves the opponent in a knockdown state with an advantage of +26, while on block, it has a disadvantage of -24.
+
+Denjin Hadoken (236236P): Similar to the previous move, this Hadoken also has multiple hits, dealing 400 damage per hit (totaling 1600). It is a high-low (LH) attack and cannot be canceled. The startup is 8 frames, and it has a recovery of 79 frames. It leaves the opponent in a knockdown state with an advantage of +27 on hit, while on block, it has a disadvantage of -24.
+
+Shin Hashogeki Lv.1 (214214P): This move delivers a powerful strike, inflicting 2600 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 12 frames, and it has a quick recovery of 6 frames. On hit, it leaves the opponent in a knockdown state with an advantage of +20, while on block, it has a disadvantage of -20.
+
+Denjin Hashogeki Lv.1 (214214P): Similar to the previous move, this attack deals 3000 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 12 frames, and it has a recovery of 6 frames. It leaves the opponent in a knockdown state with an advantage of +20 on hit, while on block, it has a disadvantage of -20.
+
+Shin Hashogeki Lv.2 (214214P [hold]): This enhanced version of the previous strike inflicts 2800 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 21 frames, and it has a recovery of 6 frames. On hit, it leaves the opponent in a knockdown state with an advantage of +20, while on block, it has a disadvantage of -20.
+
+Denjin Hashogeki Lv.2 (214214P [hold]): Similar to the previous move, this upgraded attack deals 3200 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 21 frames, and it has a recovery of 6 frames. It leaves the opponent in a knockdown state with an advantage of +20 on hit, while on block, it has a disadvantage of -20.
+
+Shin Hashogeki Lv.3 (214214P [hold]): This highest-level strike inflicts 3000 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 50 frames, and it has a recovery of 6 frames. On hit, it leaves the opponent in a tumbling knockdown state with an advantage of +78, while on block, it has a disadvantage of -20.
+
+Denjin Hashogeki Lv.3 (214214P [hold]): Similar to the previous move, this ultimate attack deals 3400 damage. It is a high-low (LH) attack and cannot be canceled. The startup is 50 frames, and it has a recovery of 6 frames. It leaves the opponent in a tumbling knockdown state with an advantage of +78 on hit, while on block, it has a disadvantage of -20.
+
+Shin Shoryuken (236236K): This move performs a devastating Shoryuken, dealing 4000 damage (2600 if used in the air). It is a high-low (LH) attack and cannot be canceled. The startup is 5 frames, and it remains active for 12 frames. After landing, it has a recovery of 32 frames followed by 39 frames in the landing state. On hit, it leaves the opponent in a hard knockdown state with an advantage of +8, while on block, it has a significant disadvantage of -52 (-54 if used as a Critical Art).
+
+Shin Shoryuken (CA) (236236K): This version of the Shoryuken is a Critical Art and deals massive damage of 4500 (4400 if used in the air). It is a high-low (LH) attack and cannot be canceled. The startup is 5 frames, and it remains active for 12 frames. After landing, it has a recovery of 32 frames followed by 39 frames in the landing state. On hit, it leaves the opponent in a hard knockdown state with an advantage of +8, while on block, it has a significant disadvantage of -52 (-54 if used as a Critical Art).
